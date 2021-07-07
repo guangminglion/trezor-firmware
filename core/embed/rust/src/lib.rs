@@ -1,8 +1,4 @@
 #![cfg_attr(not(test), no_std)]
-#![feature(never_type)]
-#![feature(unsize)]
-#![feature(coerce_unsized)]
-#![feature(dispatch_from_dyn)]
 #![deny(clippy::all)]
 #![deny(unsafe_op_in_unsafe_fn)]
 #![allow(dead_code)]
@@ -10,6 +6,7 @@
 mod error;
 #[macro_use]
 mod micropython;
+mod protobuf;
 mod trezorhal;
 mod util;
 
